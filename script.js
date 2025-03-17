@@ -1,6 +1,7 @@
 let charactersEl = document.querySelector("#characters");
 let textCountEl = document.querySelector(".textCount");
 let wordCountEl = document.querySelector(".wordCount");
+const copyButtonEl = document.querySelector("button");
 
 charactersEl.addEventListener("input", () => {
   countCharacters();
@@ -15,3 +16,8 @@ function countCharacters() {
   let filterWord = words.filter(word => word != "");
   wordCountEl.innerText = "Number of words: " + filterWord.length;
 }
+
+copyButtonEl.addEventListener("click", () => {
+    
+  window.navigator.clipboard.writeText(charactersEl.value)
+})

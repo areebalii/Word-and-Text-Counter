@@ -1,36 +1,51 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: beige;
+body {
+  background-color: rgb(70, 97, 255);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 500px;
   padding: 30px;
-  background-color: rgb(203, 194, 179);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: rgba(168, 180, 255, 0.577);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-textarea{
+h1 {
+  text-align: center;
+}
+textarea {
   padding: 10px;
   border-radius: 5px;
   font-size: 22px;
   border: none;
   outline: none;
   resize: none;
+  background-color: rgb(173, 194, 253);
 }
-.count{  
+.count {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-} 
-p{
+}
+p {
   font-size: 20px;
+}
+button {
+  padding: 10px 0;
+  background-color: rgb(173, 194, 253);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }
